@@ -1,0 +1,28 @@
+{
+  "allPlaceholder": "",
+  "showInfoWindowOnSelect": true,
+  "sources": [
+    {
+      "url": "https://maps.hillsboroughcounty.org/arcgis/rest/services/Geocoding/DBO_composite_address_locator/GeocodeServer",
+      "name": "Find Address",
+      "singleLineFieldName": "SingleLine",
+      "placeholder": "Enter Address Here",
+      "countryCode": "",
+      "maxResults": 10,
+      "type": "locator"
+    },
+    {
+      "url": "https://maps.hillsboroughcounty.org/arcgis/rest/services/InfoLayers/HC_Parcels/MapServer/0",
+      "name": "Parcels",
+      "placeholder": "Folio Search",
+      "searchFields": 
+        ["SITE_ADDR",
+		 "FOLIO_NUMB"
+		],
+      "displayField": "FOLIO_NUMB",
+      "exactMatch": true,
+      "maxResults": 10,
+      "type": "query"
+    }
+  ]
+}
